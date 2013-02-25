@@ -28,13 +28,11 @@
 		$("div[data-hidden='"+boxNum+"']").animate({top:y});
 		
 		//event listeners to close the modal
-		$("#overlay").click(function(){
-			$("div[data-hidden='"+boxNum+"']").animate({top:'-500px'});
-			});	
-		$(".close_btn, .close_link").click(function(){
+		$("#overlay, .close_btn, .close_link").click(function(){
 			$("#overlay").hide();
 			$("div[data-hidden='"+boxNum+"']").animate({top:'-500px'});
 			});	
+			
 		});
 	
 	
